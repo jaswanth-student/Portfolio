@@ -1,0 +1,122 @@
+/* Global container */
+.home-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header layout */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 200px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #6366f1, #8b5cf6) border-box;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* 🔥 Hover animation */
+.profile-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+}
+
+/* Intro text */
+.intro h1 {
+  font-size: 32px;
+  margin: 0;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.intro p {
+  color: #4b5563;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+/* Section styling */
+.section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔥 Card hover animation */
+.section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: #6366f1;
+}
+
+/* Details box */
+.details p {
+  margin: 5px 0;
+}
+
+/* 🔥 Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* BUTTON CONTAINER */
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BUTTON STYLE */
+.btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #00d4ff;
+  color: #00d4ff;
+  transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+  background: #00d4ff;
+  color: black;
+}
+
+/* HOVER */
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
